@@ -1,1 +1,2 @@
 
+ docker run --name=mycontainer -it ubuntu:latest
