@@ -4,6 +4,6 @@
 docker build  -f gns3config -t gns .
 #make an container naming mygns ,use image(imagename)
 #docker run --name=mygns -it imagename
-docker run --name=mygns -it gns3/ubuntu whoami
+docker run --name=mygns -it gns whoami
 #docker exec containername(already exits) -it bash
 docker exec mygns -it  bash
