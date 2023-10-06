@@ -1,7 +1,8 @@
+#docker build  -f dockerfilename -t imagename .
 #1.build sel image with "gns3config" file 
 #2.imagename = gns 
 #3.  “.” =position of Dockerfile ，or chage to absulute path
 docker build  -f gns3config -t gns .
 docker run --name=gns3config -it command
 #docker exec containername(already exits) -it bash
-docker exec mygns -i gns whoami
+docker exec mygns -it  bash
