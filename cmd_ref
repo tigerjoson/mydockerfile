@@ -2,4 +2,4 @@
 #2.imagename = gns 
 #3.  “.” =position of Dockerfile ，or chage to absulute path
 docker build  -f gns3config -t gns .
-
+docker run --name=gns3config -it command
