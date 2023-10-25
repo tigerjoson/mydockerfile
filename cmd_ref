@@ -8,7 +8,8 @@ docker build  -f gns3config -t mygns .
 #docker run --name=mygns -it imagename
 # using image(gns) ,build container(set name=mygns) 
 #-it =>tty
-#docker run --name=mygnscontainer -it mygns whoami
+######
+####docker run --name=mygnscontainer -it mygns whoami
 ####
 #first time
 docker run --name=mygnscontainer -it mygns
