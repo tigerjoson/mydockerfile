@@ -1,1 +1,4 @@
-
+#before use most strart container( mygnscontainer)
+docker start mygnscontainer
+#2. use 
+docker exec -it mygnscontainer
