@@ -11,7 +11,8 @@ docker build  -f gns3config -t mygns .
 #docker run --name=mygnscontainer -it mygns whoami
 ####
 #first time
-docker exec  mygnscontainer -it 
+docker run --name=mygnscontainer -it mygns
+
 
 #docker exec containername(already exits) -it bash
 docker exec  mygnscontainer -it   bash
