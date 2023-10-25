@@ -1,7 +1,7 @@
 #1.build  image with "gns3config" file 
 #2.set imagename = gns 
 #3.  “.” =position of Dockerfile ，or chage to absulute path
-docker build  -f gns3config -t gns .
+docker build  -f gns3config -t mygns .
 #make an container naming mygns ,use image(imagename)
 #docker run --name=mygns -it imagename
 docker run --name=mygns -it gns whoami
