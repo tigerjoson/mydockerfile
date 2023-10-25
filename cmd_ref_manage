@@ -1,4 +1,6 @@
 #before use most strart container( mygnscontainer)
 docker start mygnscontainer
 #2. use 
+ ##sigin with root
+ docker exec -it -u root mygnscontainer
 docker exec -it mygnscontainer
