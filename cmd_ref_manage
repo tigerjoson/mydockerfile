@@ -8,3 +8,8 @@ docker exec -it mygnscontainer bash
 
 #just use 
 docker exec -it mygnscontainer pwd
+
+
+#if volume not yet
+#set volume(myvolume) with running container(myjavacontainer) , imagename=eclipse-temurin:latest
+docker run  --name=myjavacontainer  --volume myvolume:/javacontainer -dit eclipse-temurin:latest  bash
