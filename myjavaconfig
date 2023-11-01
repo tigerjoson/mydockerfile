@@ -1,0 +1,12 @@
+#use maven image
+FROM  maven:3.9.5-amazoncorretto-8-debian-bookworm
+# #mvn make pom.xml
+# mvn archetype:generate
+WORKDIR .
+COPY myinitial.sh .
+# myinitial.sh => 1.chage "LF" 2. declare "#!/bin/sh"
+RUN chmod 777 /myinitial.sh
+RUN /myinitial.sh
+CMD  sh -c /myinitial.sh ; /bin/bash
+
+
