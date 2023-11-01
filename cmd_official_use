@@ -1,2 +1,0 @@
-#using ubuntu official image
- docker run --name=mycontainer -it ubuntu:latest
