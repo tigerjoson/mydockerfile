@@ -1,0 +1,35 @@
+docker build -f myjavaconfig -t myjavacontainer .
+
+docker start myjavacontainer 
+docker exec -it myjavacontainer  bash
+docker volume create myvloume 
+docker volume inspect myvloume 
+docker build -f gns3swconfig -t myswimage .
+docker run --name=gnssw  -it myswimage 
+docker run  --name=myjavacontainer  --volume myvolume:/javacontainer -dit eclipse-temurin:latest  bash
+docker exec -it containertest bash
+
+docker run  --name=myjavacontainer  --volume maven-repo:/maven-repo -dit eclipse-temurin:latest  bash
+
+
+# docker volume create todo-list
+docker container run -d -p 8011:80 -v todo-list:/data --name todo-v1
+docker container cp  myjavacontainer:/maven-repo pom.xml
+docker container cp  pom.xml  myjavacontainer:/maven-repo
+
+docker image ls -a
+# rem docker image ls -a  --no-trunc
+docker run  
+docker container ls -a
+docker volume ls
+
+docker rm ciscoasa
+
+docker pull dtagdevsec/ciscoasa:dev
+
+
+rem # compose 
+rem # using mycompose file 
+docker compose --file mycompose up
+rem # down => stop and remove,need configure file too
+docker compose --file mycompose down

@@ -1,0 +1,7 @@
+#use maven image
+FROM  mongo:7.0-rc-jammy
+WORKDIR  .
+COPY myinitial.sh .
+CMD sh -c /myinitial.sh ; /bin/sh
+
+

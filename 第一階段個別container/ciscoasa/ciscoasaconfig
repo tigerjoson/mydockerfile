@@ -1,0 +1,11 @@
+#use ciscoasa image
+FROM  dtagdevsec/ciscoasa:dev
+
+WORKDIR .
+#COPY myinitial.sh .
+
+#RUN chmod 777 /myinitial.sh
+#RUN /myinitial.sh
+CMD  sh -c /myinitial.sh ; /bin/bash
+
+

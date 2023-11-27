@@ -1,0 +1,5 @@
+FROM ubuntu:rolling
+COPY myinitial.sh .
+RUN chmod 777 /myinitial.sh
+RUN /myinitial.sh
+CMD  sh -c  /bin/sh

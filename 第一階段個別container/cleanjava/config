@@ -1,0 +1,12 @@
+#use eclipse-temurin image
+FROM  eclipse-temurin:11
+
+WORKDIR .
+COPY myinitial.sh .
+# myinitial.sh => 1.chage "LF" 2. declare "#!/bin/sh"
+RUN chmod 777 /myinitial.sh
+RUN /myinitial.sh
+CMD  sh -c  /bin/sh
+
+
+

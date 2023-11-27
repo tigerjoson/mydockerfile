@@ -1,0 +1,7 @@
+mvn -v
+#make pom 
+mvn archetype:generate
+mvn exec:java
+
+mvn wrapper:wrapper
+mvnw -v
