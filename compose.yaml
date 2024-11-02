@@ -10,7 +10,7 @@ services:
     ports:
       - '8080:8080'
     volumes:
-      - C:/Users/tiger/OneDrive/桌面/jiraVolum:/var/atlassian/jira  # JIRA_HOME
+      - C:/..../jiraVolum:/var/atlassian/jira  # JIRA_HOME
 
   mysql:
     container_name: mysql  # https://store.docker.com/images/mysql
@@ -24,7 +24,7 @@ services:
       - MYSQL_USER=jira                # this user will be granted superuser permissions on MYSQL_DATABASE
       - MYSQL_PASSWORD=jellyfish
     volumes:
-      - C:/Users/tiger/OneDrive/桌面/mysqlVolum:/var/lib/mysql
+      - C:/.../mysqlVolum:/var/lib/mysql
 
 volumes:
   jira-data:
@@ -32,4 +32,4 @@ volumes:
 
 
    # volumes:
-  #  - C:/Users/tiger/OneDrive/桌面/jiraVolum:/var/atlassian/application-data/jira
+  #  - C:/Users/.../jiraVolum:/var/atlassian/application-data/jira
