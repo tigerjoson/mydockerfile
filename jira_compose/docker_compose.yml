@@ -1,3 +1,4 @@
+#ref://https://github.com/teamatldocker/jira/blob/master/examples/mysql/docker-compose.yml
 jira:
   image: teamatldocker/jira
   container_name: jira
