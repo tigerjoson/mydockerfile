@@ -1,0 +1,9 @@
+rem yolov4
+docker run -v name:/myvolume --ipc=host --name=myyolov4  -it 145731227829
+
+docker start  myyolov4
+docker exec -it  myyolov4 bash
+
+rem yolov7
+docker pull shareai/yolov7_reid
+docker run -v name:/myvolume --name=myyolov7  -it 
